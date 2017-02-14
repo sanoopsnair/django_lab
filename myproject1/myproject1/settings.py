@@ -73,12 +73,11 @@ WSGI_APPLICATION = 'myproject1.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
-path = BASE_DIR + "/db"
-# path = "/home/toobler/projects/django_lab/myproject1/db" 
+DBpath = BASE_DIR + "/db"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(path, 'db.sqlite3'),
+        'NAME': os.path.join(DBpath, 'db.sqlite3'),
     }
 }
 
